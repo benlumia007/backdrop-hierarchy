@@ -16,6 +16,7 @@
  */
 namespace Benlumia007\Backdrop\Template\Hierarchy;
 use Benlumia007\Backdrop\Template\Contracts\Hierarchy as TemplateHierarchy;
+use Benlumia007\Backdrop\Template\Hierarchy\Component;
 use Benlumia007\Backdrop\Tools\ServiceProvider;
 
 /**
