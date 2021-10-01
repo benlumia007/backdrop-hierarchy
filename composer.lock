@@ -59,12 +59,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/benlumia007/backdrop-template-helpers.git",
-                "reference": "ea48e763f53d6a6c6b084251606dc583d336a12b"
+                "reference": "2bad9121e970f3c57721e4e456fd17b8cfc0f618"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benlumia007/backdrop-template-helpers/zipball/ea48e763f53d6a6c6b084251606dc583d336a12b",
-                "reference": "ea48e763f53d6a6c6b084251606dc583d336a12b",
+                "url": "https://api.github.com/repos/benlumia007/backdrop-template-helpers/zipball/2bad9121e970f3c57721e4e456fd17b8cfc0f618",
+                "reference": "2bad9121e970f3c57721e4e456fd17b8cfc0f618",
                 "shasum": ""
             },
             "require": {
@@ -76,7 +76,10 @@
             "autoload": {
                 "psr-4": {
                     "Benlumia007\\Backdrop\\Template\\": "src/"
-                }
+                },
+                "files": [
+                    "src/functions-helpers.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -99,7 +102,7 @@
                 "issues": "https://github.com/benlumia007/backdrop-template-helpers/issues",
                 "source": "https://github.com/benlumia007/backdrop-template-helpers/tree/v1.0.0"
             },
-            "time": "2021-10-01T04:41:56+00:00"
+            "time": "2021-10-01T05:11:29+00:00"
         }
     ],
     "packages-dev": [],
