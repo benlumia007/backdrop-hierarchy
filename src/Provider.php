@@ -17,12 +17,12 @@
 namespace Benlumia007\Backdrop\Template\Hierarchy;
 use Benlumia007\Backdrop\Template\Contracts\Hierarchy as TemplateHierarchy;
 use Benlumia007\Backdrop\Template\Hierarchy\Component;
-use Benlumia007\Backdrop\Tools\ServiceProvider;
+use Benlumia007\Backdrop\Support\ServiceProvider;
 
 /**
  * Template hierarchy provider class.
  *
- * @since  3.0.0
+ * @since  1.0.0
  * @access public
  */
 class Provider extends ServiceProvider {
@@ -31,7 +31,7 @@ class Provider extends ServiceProvider {
 	 * Registration callback that adds a single instance of the template
 	 * hierarchy to the container.
 	 *
-	 * @since  3.0.0
+	 * @since  1.0.0
 	 * @access public
 	 * @return void
 	 */
@@ -45,7 +45,7 @@ class Provider extends ServiceProvider {
 	/**
 	 * Boots the hierarchy by firing its hooks in the `boot()` method.
 	 *
-	 * @since  3.0.0
+	 * @since  1.0.0
 	 * @access public
 	 * @return void
 	 */
