@@ -13,7 +13,7 @@
  */
 namespace Benlumia007\Backdrop\Template\Hierarchy;
 use Benlumia007\Backdrop\Template\Hierarchy\Contracts\Hierarchy as templateHierarchy;
-use function Benlumia007\Backdrop\Template\path;
+use function Benlumia007\Backdrop\Template\Helpers\path;
 use WP_User;
 
 /**
