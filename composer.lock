@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/benlumia007/backdrop-template-helpers.git",
-                "reference": "e483655c64f93e9a2cb84f7db84f3146f3ca059f"
+                "reference": "75eee73f583c23b508e934546c49bef3a208d9d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benlumia007/backdrop-template-helpers/zipball/e483655c64f93e9a2cb84f7db84f3146f3ca059f",
-                "reference": "e483655c64f93e9a2cb84f7db84f3146f3ca059f",
+                "url": "https://api.github.com/repos/benlumia007/backdrop-template-helpers/zipball/75eee73f583c23b508e934546c49bef3a208d9d1",
+                "reference": "75eee73f583c23b508e934546c49bef3a208d9d1",
                 "shasum": ""
             },
             "require": {
@@ -54,7 +54,7 @@
                 "issues": "https://github.com/benlumia007/backdrop-template-helpers/issues",
                 "source": "https://github.com/benlumia007/backdrop-template-helpers/tree/v1.0.0"
             },
-            "time": "2022-05-27T04:38:47+00:00"
+            "time": "2022-05-27T16:58:51+00:00"
         }
     ],
     "packages-dev": [],
