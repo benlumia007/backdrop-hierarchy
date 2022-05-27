@@ -4,117 +4,17 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e792fbfef675e33edbc1763912392b9d",
-    "packages": [
-        {
-            "name": "benlumia007/backdrop",
-            "version": "3.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/benlumia007/backdrop.git",
-                "reference": "648fcaa023733ac4631e21c2e5c3f96675d79b42"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/benlumia007/backdrop/zipball/648fcaa023733ac4631e21c2e5c3f96675d79b42",
-                "reference": "648fcaa023733ac4631e21c2e5c3f96675d79b42",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.3.24"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Benlumia007\\Backdrop\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Benjamin Lu",
-                    "email": "benlumia007@gmail.com",
-                    "homepage": "https://benjlu.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "A core that helps you build amazing themes",
-            "homepage": "https://github.com/benlumia007/backdrop",
-            "keywords": [
-                "wordpress"
-            ],
-            "support": {
-                "issues": "https://github.com/benlumia007/backdrop/issues",
-                "source": "https://github.com/benlumia007/backdrop/tree/3.0.0"
-            },
-            "time": "2021-11-03T20:53:44+00:00"
-        },
-        {
-            "name": "benlumia007/backdrop-template-helpers",
-            "version": "v1.0.0.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/benlumia007/backdrop-template-helpers.git",
-                "reference": "a95e685e00c0991c3f102441449d29c8fe91ddb6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/benlumia007/backdrop-template-helpers/zipball/a95e685e00c0991c3f102441449d29c8fe91ddb6",
-                "reference": "a95e685e00c0991c3f102441449d29c8fe91ddb6",
-                "shasum": ""
-            },
-            "require": {
-                "benlumia007/backdrop": "^3.0.0",
-                "php": ">=7.3.24"
-            },
-            "default-branch": true,
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Benlumia007\\Backdrop\\Template\\": "src/"
-                },
-                "files": [
-                    "src/functions-helpers.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Benjamin Lu",
-                    "email": "benlumia007@gmail.com",
-                    "homepage": "https://benjlu.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "A core that helps you build amazing themes",
-            "homepage": "https://github.com/benlumia007/backdrop-template-helpers",
-            "keywords": [
-                "wordpress"
-            ],
-            "support": {
-                "issues": "https://github.com/benlumia007/backdrop-template-helpers/issues",
-                "source": "https://github.com/benlumia007/backdrop-template-helpers/tree/v1.0.0"
-            },
-            "time": "2021-11-03T21:08:24+00:00"
-        }
-    ],
+    "content-hash": "ef2c8bd38f27d29de478cf87ce1bea5d",
+    "packages": [],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "benlumia007/backdrop-template-helpers": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.0"
+        "php": ">=7.4.29"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.3.0"
 }
