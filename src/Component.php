@@ -77,9 +77,6 @@ class Component implements templateHierarchy {
      */
     public function boot() {
 
-        // Filter the single template.
-        add_filter( 'single_template_hierarchy',     [ $this, 'single' ], 5 );
-
         // System to capture template hierarchy.
         foreach( $this->types as $type ) {
 			// Capture the template hierarchy for each type.
