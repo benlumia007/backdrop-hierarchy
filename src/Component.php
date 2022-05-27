@@ -128,7 +128,7 @@ class Component implements templateHierarchy {
 
         $this->hierarchy = array_unique( $this->hierarchy );
 
-        return filter_template( $templates );
+        return filter_templates( $templates );
     }
 
     /**
