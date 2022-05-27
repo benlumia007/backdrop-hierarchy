@@ -17,12 +17,10 @@
     "autoload": {
         "psr-4": {
           "Benlumia007\\Backdrop\\Template\\Hierarchy\\": "src/"
-		},
-        "files": [
-            "src/functions-helpers.php"
-        ]
+		}
     },
     "require": {
-        "php": ">=7.4.29"
+        "php": ">=7.4.29",
+        "benlumia007/backdrop-template-helpers": "v1.0.0.x-dev"
     }
 }
