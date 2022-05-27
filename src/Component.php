@@ -62,6 +62,12 @@ class Component implements templateHierarchy {
     protected $located = '';
 
     /**
+     * An array of the entire template hierarchy for the current page view.
+     * This hierarchy does not have the `.php` file name extension.
+     */
+    protected $hierarchy = [];
+
+    /**
      * Setup the template hierarchy filters.
      * 
      * @since  1.0.0
@@ -69,6 +75,10 @@ class Component implements templateHierarchy {
      * @return void
      */
     public function boot() {
+
+        // Filter the single template.
+        add_filter( 'single_template_hierarchy',     [ $this, 'single' ], 5 );
+
         // System to capture template hierarchy.
         foreach( $this->types as $type ) {
 			// Capture the template hierarchy for each type.
@@ -82,6 +92,17 @@ class Component implements templateHierarchy {
 		add_filter( 'template_include', [ $this, 'templateInclude' ], PHP_INT_MAX );
     }
 
+	/**
+	 * Returns the full template hierarchy for the current page load.
+	 *
+	 * @since  1.0.0
+	 * @access public
+	 * @return array
+	 */
+	public function hierarchy() {
+		return $this->hierarchy;
+	}
+
     /**
      * Filters a queried template hierarchy for each type of template
      * and looks templates within `resources/views'.
@@ -91,18 +112,23 @@ class Component implements templateHierarchy {
      * @return array
      */
     public function templateHierarchy( $templates ) {
-        $path = path();
+        /**
+         * Merge the current template's hierarchy with the overall hierarchy array.
+         */
+        $this->hierarchy = array_merge(
+            $this->hierarchy,
+            array_map( function( $template ) {
+                return substr(
+                    $template,
+                    0,
+                    strlen( $template ) - strlen( strrchr( $template, '.' ) )
+                );
+            }, $templates )
+        );
 
-        if ( $path ) {
-            array_walk( $templates, function( &$template, $key ) use ( $path ) {
-    
-                $template = ltrim( str_replace( $path, '', $template ), '/' );
-    
-                $template = "{$path}/{$template}";
-            } );
-        }
-    
-        return $templates;
+        $this->hierarchy = array_unique( $this->hierarchy );
+
+        return filter_template( $templates );
     }
 
     /**
