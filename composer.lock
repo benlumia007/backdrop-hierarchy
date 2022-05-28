@@ -4,26 +4,25 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9cf3f548afd75941be57a4966eaf8852",
+    "content-hash": "deb9b1107d353cce851712e5ea75ca04",
     "packages": [
         {
             "name": "benlumia007/backdrop-template-helpers",
-            "version": "v1.0.0.x-dev",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/benlumia007/backdrop-template-helpers.git",
-                "reference": "75eee73f583c23b508e934546c49bef3a208d9d1"
+                "reference": "2c03bc7de30da8962da7ae9899304ba668491789"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benlumia007/backdrop-template-helpers/zipball/75eee73f583c23b508e934546c49bef3a208d9d1",
-                "reference": "75eee73f583c23b508e934546c49bef3a208d9d1",
+                "url": "https://api.github.com/repos/benlumia007/backdrop-template-helpers/zipball/2c03bc7de30da8962da7ae9899304ba668491789",
+                "reference": "2c03bc7de30da8962da7ae9899304ba668491789",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.4.29"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "files": [
@@ -52,17 +51,15 @@
             ],
             "support": {
                 "issues": "https://github.com/benlumia007/backdrop-template-helpers/issues",
-                "source": "https://github.com/benlumia007/backdrop-template-helpers/tree/v1.0.0"
+                "source": "https://github.com/benlumia007/backdrop-template-helpers/tree/1.0.0"
             },
-            "time": "2022-05-27T16:58:51+00:00"
+            "time": "2022-05-27T19:41:43+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "benlumia007/backdrop-template-helpers": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
