@@ -20,7 +20,7 @@
 		}
     },
     "require": {
-        "php": ">=7.4.29",
+        "php": ">=7.4",
         "benlumia007/backdrop-template-helpers": "^1.0.0"
     }
 }
