@@ -15,9 +15,10 @@
  * Define namespace
  */
 namespace Backdrop\Template\Hierarchy;
+
+use Backdrop\Core\ServiceProvider;
 use Backdrop\Template\Contracts\Hierarchy as TemplateHierarchy;
 use Backdrop\Template\Hierarchy\Component;
-use Backdrop\Support\ServiceProvider;
 
 /**
  * Template hierarchy provider class.
