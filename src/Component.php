@@ -75,7 +75,7 @@ class Component implements templateHierarchy {
      * @access public
      * @return void
      */
-    public function boot() {
+    public function boot() : void {
 
         // System to capture template hierarchy.
         foreach( $this->types as $type ) {
