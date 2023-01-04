@@ -14,10 +14,10 @@
 /**
  * Define namespace
  */
-namespace Benlumia007\Backdrop\Template\Hierarchy;
-use Benlumia007\Backdrop\Template\Contracts\Hierarchy as TemplateHierarchy;
-use Benlumia007\Backdrop\Template\Hierarchy\Component;
-use Benlumia007\Backdrop\Support\ServiceProvider;
+namespace Backdrop\Template\Hierarchy;
+use Backdrop\Template\Contracts\Hierarchy as TemplateHierarchy;
+use Backdrop\Template\Hierarchy\Component;
+use Backdrop\Support\ServiceProvider;
 
 /**
  * Template hierarchy provider class.

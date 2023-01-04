@@ -11,10 +11,10 @@
 /**
  * Define namespace
  */
-namespace Benlumia007\Backdrop\Template\Hierarchy;
-use Benlumia007\Backdrop\Template\Hierarchy\Contracts\Hierarchy as templateHierarchy;
-use function Benlumia007\Backdrop\Template\Helpers\path;
-use function Benlumia007\Backdrop\Template\Helpers\filter_templates;
+namespace Backdrop\Template\Hierarchy;
+use Backdrop\Template\Hierarchy\Contracts\Hierarchy as templateHierarchy;
+use function Backdrop\Template\Helpers\path;
+use function Backdrop\Template\Helpers\filter_templates;
 use WP_User;
 
 /**

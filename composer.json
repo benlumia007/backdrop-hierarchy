@@ -16,7 +16,7 @@
     ],
     "autoload": {
         "psr-4": {
-          "Benlumia007\\Backdrop\\Template\\Hierarchy\\": "src/"
+          "Backdrop\\Template\\Hierarchy\\": "src/"
 		}
     },
     "require": {

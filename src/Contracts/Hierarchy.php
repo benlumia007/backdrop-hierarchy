@@ -15,8 +15,8 @@
  * @since  1.0.0
  * @access public
  */
-namespace Benlumia007\Backdrop\Template\Hierarchy\Contracts;
-use Benlumia007\Backdrop\Contracts\Bootable;
+namespace Backdrop\Template\Hierarchy\Contracts;
+use Backdrop\Contracts\Bootable;
 
 /**
  * Template Hierarchy Template
