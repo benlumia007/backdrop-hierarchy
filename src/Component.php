@@ -1,10 +1,17 @@
 <?php
 /**
- * Backdrop Core ( functions-template.php )
+ * Template hierarchy class.
+ * 
+ * The framework has its own template hierarchy that can be used instead of the
+ * default WordPress template hierarchy.  It is not much different than the
+ * default.  It was built to extend the default by making it smarter and more
+ * flexible.  The goal is to give theme developers and end users an easy-to-override
+ * system that doesn't involve massive amounts of conditional tags within files.
  *
- * @package   Backdrop Core
- * @copyright Copyright (C) 2019-2021. Benjamin Lu
- * @author    Benjamin Lu ( https://getbenonit.com )
+ * @package   Backdrop
+ * @author    Benjamin Lu <benlumia007@gmail.com>
+ * @copyright 2019-2023. Benjamin Lu
+ * @link      https://github.com/benlumia007/backdrop-template-hierarchy
  * @license   https://www.gnu.org/licenses/gpl-2.0.html
  */
 
@@ -12,6 +19,7 @@
  * Define namespace
  */
 namespace Backdrop\Template\Hierarchy;
+
 use Backdrop\Template\Hierarchy\Contracts\Hierarchy as templateHierarchy;
 use function Backdrop\Template\Helpers\path;
 use function Backdrop\Template\Helpers\filter_templates;
@@ -77,6 +85,9 @@ class Component implements templateHierarchy {
      */
     public function boot() : void {
 
+		// Filter the front page template.
+		add_filter( 'frontpage_template_hierarchy',  [ $this, 'frontPage' ], 5 );
+
         // System to capture template hierarchy.
         foreach( $this->types as $type ) {
 			// Capture the template hierarchy for each type.
@@ -99,6 +110,44 @@ class Component implements templateHierarchy {
 	 */
 	public function hierarchy() {
 		return $this->hierarchy;
+	}
+
+	/**
+	 * Fix for the front page template handling in WordPress core. Its
+	 * handling is not logical because it forces devs to account for both a
+	 * page on the front page and posts on the front page.  Theme devs must
+	 * handle both scenarios if they've created a "front-page.php" template.
+	 * This filter overwrites that and disables the `front-page.php` template
+	 * if posts are to be shown on the front page.  This way, the
+	 * `front-page.php` template will only ever be used if an actual page is
+	 * supposed to be shown on the front.
+	 *
+	 * Additionally, this filter allows the user to override the front page
+	 * via the standard page template.  User choice should always trump
+	 * developer choice.
+	 *
+	 * @since  1.0.0
+	 * @access public
+	 * @param  array   $templates
+	 * @return array
+	 */
+	public function frontPage( $templates ) {
+
+		$templates = [];
+
+		if ( ! is_home() ) {
+
+			$custom = get_page_template_slug( get_queried_object_id() );
+
+			if ( $custom ) {
+				$templates[] = $custom;
+			}
+
+			$templates[] = 'front-page.php';
+		}
+
+		// Return the template hierarchy.
+		return $templates;
 	}
 
     /**
