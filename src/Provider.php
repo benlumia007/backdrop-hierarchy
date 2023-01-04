@@ -50,7 +50,7 @@ class Provider extends ServiceProvider {
 	 * @access public
 	 * @return void
 	 */
-	public function boot() {
+	public function boot() : void {
 
 		$this->app->resolve( 'template/hierarchy' )->boot();
 	}
