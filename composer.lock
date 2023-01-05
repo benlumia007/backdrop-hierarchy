@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "deb9b1107d353cce851712e5ea75ca04",
+    "content-hash": "fccd405610f7d3d480cd34579e39bc8d",
     "packages": [
         {
             "name": "benlumia007/backdrop-template-helpers",
@@ -12,16 +12,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/benlumia007/backdrop-template-helpers.git",
-                "reference": "2c03bc7de30da8962da7ae9899304ba668491789"
+                "reference": "1285b7d193fbadfa6ef9edc306d946361771e90c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benlumia007/backdrop-template-helpers/zipball/2c03bc7de30da8962da7ae9899304ba668491789",
-                "reference": "2c03bc7de30da8962da7ae9899304ba668491789",
+                "url": "https://api.github.com/repos/benlumia007/backdrop-template-helpers/zipball/1285b7d193fbadfa6ef9edc306d946361771e90c",
+                "reference": "1285b7d193fbadfa6ef9edc306d946361771e90c",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.4.29"
+                "php": ">=7.4"
             },
             "type": "library",
             "autoload": {
@@ -29,7 +29,7 @@
                     "src/functions-helpers.php"
                 ],
                 "psr-4": {
-                    "Benlumia007\\Backdrop\\Template\\Helpers\\": "src/"
+                    "Backdrop\\Template\\Helpers\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -53,7 +53,7 @@
                 "issues": "https://github.com/benlumia007/backdrop-template-helpers/issues",
                 "source": "https://github.com/benlumia007/backdrop-template-helpers/tree/1.0.0"
             },
-            "time": "2022-05-27T19:41:43+00:00"
+            "time": "2023-01-04T22:22:19+00:00"
         }
     ],
     "packages-dev": [],
@@ -63,7 +63,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.4.29"
+        "php": ">=7.4"
     },
     "platform-dev": [],
     "plugin-api-version": "2.3.0"
