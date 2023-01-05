@@ -181,24 +181,26 @@ class Component implements templateHierarchy {
 		return filter_templates( $templates );
     }
 
-    /**
-     * Filters the template for each type of template in the hierarchy.
-     * If `$templates` exists, it means we've located a template, so
-     * we are going to store that template for later use and return
-     * an empty string so that the template hierarchy continues processing.
-     * This way, we can capture the entire hierarchy.
-     * 
-     * @since  1.0.0
-     * @access public
-     * @param  string $template
-     */
-    public function template( $template ) {
-        if ( ! $this->located && $template ) {
-            $this->located = $template;
-        }
+	/**
+	 * Filters the template for each type of template in the hierarchy. If
+	 * `$template` exists, it means we've located a template. So, we're going
+	 * to store that template for later use and return an empty string so
+	 * that the template hierarchy continues processing. That way, we can
+	 * capture the entire hierarchy.
+	 *
+	 * @since  1.0.0
+	 * @access public
+	 * @param  string  $template
+	 * @return string
+	 */
+	public function template( $template ) {
 
-        return '';
-    }
+		if ( ! $this->located && $template ) {
+			$this->located = $template;
+		}
+
+		return '';
+	}
     
     /**
      * Filters on  `template_include` to make sure we fall
