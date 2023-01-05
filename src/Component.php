@@ -20,7 +20,7 @@
  */
 namespace Backdrop\Template\Hierarchy;
 
-use Backdrop\Template\Hierarchy\Contracts\Hierarchy as templateHierarchy;
+use Backdrop\Contracts\Bootable;
 use function Backdrop\Template\Helpers\filter_templates;
 use WP_User;
 
@@ -30,7 +30,7 @@ use WP_User;
  * @since  1.0.0
  * @access public
  */
-class Component implements templateHierarchy {
+class Component implements Bootable {
     /**
      * Array of template types in WordPress Core.
      * 
