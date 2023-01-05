@@ -17,6 +17,7 @@
 namespace Backdrop\Template\Hierarchy;
 
 use Backdrop\Core\ServiceProvider;
+use Backdrop\Template\Hierarchy\Contracts\Hierarchy;
 use Backdrop\Template\Hierarchy\Component;
 
 /**
@@ -37,7 +38,7 @@ class Provider extends ServiceProvider {
 	 */
 	public function register() {
 
-		$this->app->alias( Component::class, 'template/hierarchy' );
+		$this->app->singleton( Hierarchy::class, Component::class );
 	}
 
 	/**
@@ -49,6 +50,6 @@ class Provider extends ServiceProvider {
 	 */
 	public function boot() : void {
 
-		$this->app->resolve( 'template/hierarchy' )->boot();
+		$this->app->resolve( Hierarchy::class )->boot();
 	}
 }
