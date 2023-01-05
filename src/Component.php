@@ -202,26 +202,26 @@ class Component implements templateHierarchy {
 		return '';
 	}
     
-    /**
-     * Filters on  `template_include` to make sure we fall
-     * back to our template from earlier.
-     * 
-     * @since  1.0.0
-     * @access public
-     * @param  string $template
-     * @return string
-     */
-    public function templateInclude( $template ) {
+	/**
+	 * Filter on `template_include` to make sure we fall back to our
+	 * located template from earlier.
+	 *
+	 * @since  1.0.0
+	 * @access public
+	 * @param  string  $template
+	 * @return string
+	 */
+	public function templateInclude( $template ) {
+
 		// If the template is not a string at this point, it either
 		// doesn't exist or a plugin is telling us it's doing
 		// something custom.
 		if ( ! is_string( $template ) ) {
-
 			return $template;
 		}
 
 		// If there's a template, return it. Otherwise, return our
 		// located template from earlier.
 		return $template ?: $this->located;
-    }
+	}
 }
