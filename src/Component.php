@@ -46,7 +46,7 @@ class Component implements templateHierarchy {
         'category',
         'date',
         'embed',
-        'fontpage',
+        'frontpage',
         'home',
         'index',
         'page',
