@@ -161,20 +161,24 @@ class Component implements templateHierarchy {
         /**
          * Merge the current template's hierarchy with the overall hierarchy array.
          */
-        $this->hierarchy = array_merge(
-            $this->hierarchy,
-            array_map( function( $template ) {
-                return substr(
-                    $template,
-                    0,
-                    strlen( $template ) - strlen( strrchr( $template, '.' ) )
-                );
-            }, $templates )
-        );
+		$this->hierarchy = array_merge(
+			$this->hierarchy,
+			array_map( function( $template ) {
 
-        $this->hierarchy = array_unique( $this->hierarchy );
+				// Strip extension from file name.
+				return substr(
+					$template,
+					0,
+					strlen( $template ) - strlen( strrchr( $template, '.' ) )
+				);
 
-        return filter_templates( $templates );
+			}, $templates )
+		);
+
+		// Make sure there are no duplicates in the hierarchy.
+		$this->hierarchy = array_unique( $this->hierarchy );
+
+		return filter_templates( $templates );
     }
 
     /**
