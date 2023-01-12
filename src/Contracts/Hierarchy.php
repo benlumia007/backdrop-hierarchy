@@ -31,5 +31,5 @@ interface Hierarchy extends Bootable {
 	 * @access public
 	 * @return array
 	 */
-	public function hierarchy();
+	public function hierarchy(): array;
 }

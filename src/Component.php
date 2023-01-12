@@ -38,7 +38,7 @@ class Component implements Hierarchy {
      * @access protected
      * @var    array
      */
-    protected $types = [
+    protected array $types = [
         '404',
         'archive',
         'attachment',
@@ -67,13 +67,13 @@ class Component implements Hierarchy {
      * @access protected
      * @var    string
      */
-    protected $located = '';
+    protected string $located = '';
 
     /**
      * An array of the entire template hierarchy for the current page view.
      * This hierarchy does not have the `.php` file name extension.
      */
-    protected $hierarchy = [];
+    protected array $hierarchy = [];
 
     /**
      * Setup the template hierarchy filters.
@@ -107,7 +107,7 @@ class Component implements Hierarchy {
 	 * @access public
 	 * @return array
 	 */
-	public function hierarchy() {
+	public function hierarchy(): array {
 		return $this->hierarchy;
 	}
 
@@ -130,7 +130,7 @@ class Component implements Hierarchy {
 	 * @param  array   $templates
 	 * @return array
 	 */
-	public function frontPage( $templates ) {
+	public function frontPage( array $templates ): array {
 
 		$templates = [];
 
@@ -157,7 +157,7 @@ class Component implements Hierarchy {
      * @access public
      * @return array
      */
-    public function templateHierarchy( $templates ) {
+    public function templateHierarchy( $templates ): array {
         /**
          * Merge the current template's hierarchy with the overall hierarchy array.
          */
@@ -193,7 +193,7 @@ class Component implements Hierarchy {
 	 * @param  string  $template
 	 * @return string
 	 */
-	public function template( $template ) {
+	public function template( string $template ): string {
 
 		if ( ! $this->located && $template ) {
 			$this->located = $template;
@@ -211,14 +211,7 @@ class Component implements Hierarchy {
 	 * @param  string  $template
 	 * @return string
 	 */
-	public function templateInclude( $template ) {
-
-		// If the template is not a string at this point, it either
-		// doesn't exist or a plugin is telling us it's doing
-		// something custom.
-		if ( ! is_string( $template ) ) {
-			return $template;
-		}
+	public function templateInclude( string $template ): string {
 
 		// If there's a template, return it. Otherwise, return our
 		// located template from earlier.
