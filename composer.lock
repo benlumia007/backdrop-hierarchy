@@ -4,11 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4dc3705dffc2a60b3bd06d971d10b1cb",
+    "content-hash": "6d945c5fa3f48bb47a20ce852cb65138",
     "packages": [
         {
             "name": "benlumia007/backdrop",
-            "version": "v2.0.0.x-dev",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/benlumia007/backdrop.git",
@@ -24,7 +24,6 @@
                 "benlumia007/backdrop-contracts": "^1.0.0",
                 "php": ">=8.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "files": [
@@ -53,7 +52,7 @@
             ],
             "support": {
                 "issues": "https://github.com/benlumia007/backdrop/issues",
-                "source": "https://github.com/benlumia007/backdrop/tree/v2.0.0"
+                "source": "https://github.com/benlumia007/backdrop/tree/2.0.0"
             },
             "time": "2023-01-11T23:19:40+00:00"
         },
@@ -157,9 +156,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "benlumia007/backdrop": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
