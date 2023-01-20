@@ -38,7 +38,7 @@ class Component implements Hierarchy {
      * @access protected
      * @var    array
      */
-    protected array $types = [
+    protected $types = [
         '404',
         'archive',
         'attachment',
@@ -67,13 +67,13 @@ class Component implements Hierarchy {
      * @access protected
      * @var    string
      */
-    protected string $located = '';
+    protected $located = '';
 
     /**
      * An array of the entire template hierarchy for the current page view.
      * This hierarchy does not have the `.php` file name extension.
      */
-    protected array $hierarchy = [];
+    protected $hierarchy = [];
 
     /**
      * Setup the template hierarchy filters.
@@ -82,7 +82,7 @@ class Component implements Hierarchy {
      * @access public
      * @return void
      */
-    public function boot() : void {
+    public function boot() {
 
 		// Filter the front page template.
 		add_filter( 'frontpage_template_hierarchy',  [ $this, 'frontPage' ], 5 );
