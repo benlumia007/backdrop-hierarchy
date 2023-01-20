@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "14b4d2586e9b3ecf601a09ec4d104402",
+    "content-hash": "acb425803a44755a2843c229fb713d10",
     "packages": [
         {
             "name": "benlumia007/backdrop-template-helpers",
@@ -12,16 +12,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/benlumia007/backdrop-template-helpers.git",
-                "reference": "dd7930100fb80365d78fc1ced5830016525dc206"
+                "reference": "4c95d4710406e31901d6e992737ae3eb4331a83e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benlumia007/backdrop-template-helpers/zipball/dd7930100fb80365d78fc1ced5830016525dc206",
-                "reference": "dd7930100fb80365d78fc1ced5830016525dc206",
+                "url": "https://api.github.com/repos/benlumia007/backdrop-template-helpers/zipball/4c95d4710406e31901d6e992737ae3eb4331a83e",
+                "reference": "4c95d4710406e31901d6e992737ae3eb4331a83e",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.0"
+                "php": ">=7.0"
             },
             "type": "library",
             "autoload": {
@@ -53,7 +53,7 @@
                 "issues": "https://github.com/benlumia007/backdrop-template-helpers/issues",
                 "source": "https://github.com/benlumia007/backdrop-template-helpers/tree/1.0.0"
             },
-            "time": "2023-01-17T06:15:14+00:00"
+            "time": "2023-01-19T23:23:48+00:00"
         }
     ],
     "packages-dev": [],
@@ -63,8 +63,8 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=8.0"
+        "php": ">=7.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.2.0"
 }
