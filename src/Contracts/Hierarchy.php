@@ -23,13 +23,13 @@ use Backdrop\Contracts\Bootable;
  */
 interface Hierarchy extends Bootable {
 
-	/**
-	 * Should return an array of template file names without the file
-	 * extension (`.php`).
-	 *
-	 * @since  1.0.0
-	 * @access public
-	 * @return array
-	 */
-	public function hierarchy(): array;
+    /**
+     * Should return an array of template file names without the file
+     * extension (`.php`).
+     *
+     * @since  1.0.0
+     * @access public
+     * @return array
+     */
+    public function hierarchy(): array;
 }
