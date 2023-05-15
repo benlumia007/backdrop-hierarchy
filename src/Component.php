@@ -87,6 +87,8 @@ class Component implements Hierarchy {
         // Filter the front page template.
         add_filter( 'frontpage_template_hierarchy',  [ $this, 'frontPage' ], 5 );
 
+        add_filter( 'single_template_hierarchy',     [ $this, 'single' ], 5 );
+
         // System to capture template hierarchy.
         foreach( $this->types as $type ) {
 
@@ -149,6 +151,43 @@ class Component implements Hierarchy {
         // Return the template hierarchy.
         return $templates;
     }
+
+	/**
+	 * Overrides the default single (singular post) template for all post
+	 * types, including pages and attachments.
+	 *
+	 * @since  1.0.0
+	 * @access public
+	 * @param  array   $templates
+	 * @return array
+	 */
+	public function single( $templates ) {
+
+		$templates = [];
+
+		// Get the queried post.
+		$post = get_queried_object();
+
+		// Decode the post name.
+		$name = urldecode( $post->post_name );
+
+		// Check for a custom post template.
+		$custom = get_page_template_slug( $post->ID );
+
+		if ( $custom ) {
+			$templates[] = $custom;
+		}
+
+		// Add a template based off the post type name.
+		$templates[] = "single-{$post->post_type}.php";
+		$templates[] = "{$post->post_type}.php";
+
+		// Allow for WP standard 'single' template.
+		$templates[] = 'single.php';
+
+		// Return the template hierarchy.
+		return $templates;
+	}
 
     /**
      * Filters a queried template hierarchy for each type of template
