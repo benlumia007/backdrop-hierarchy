@@ -4,11 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5247bd1a793d4dd86f48e6d587c1e177",
+    "content-hash": "40ba998fea86e0da668b51615231a1cd",
     "packages": [
         {
             "name": "benlumia007/backdrop",
-            "version": "2.0.0",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/benlumia007/backdrop.git",
@@ -52,7 +52,7 @@
             ],
             "support": {
                 "issues": "https://github.com/benlumia007/backdrop/issues",
-                "source": "https://github.com/benlumia007/backdrop/tree/2.0.0"
+                "source": "https://github.com/benlumia007/backdrop/tree/1.0.0"
             },
             "time": "2023-01-22T09:08:30+00:00"
         },
@@ -109,12 +109,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/benlumia007/backdrop-template-helpers.git",
-                "reference": "0e9776c6b4b3624b0a6798d7c9310d772b2e1989"
+                "reference": "a3775c71f21ec922f841127e74983e8066a5c4e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benlumia007/backdrop-template-helpers/zipball/0e9776c6b4b3624b0a6798d7c9310d772b2e1989",
-                "reference": "0e9776c6b4b3624b0a6798d7c9310d772b2e1989",
+                "url": "https://api.github.com/repos/benlumia007/backdrop-template-helpers/zipball/a3775c71f21ec922f841127e74983e8066a5c4e4",
+                "reference": "a3775c71f21ec922f841127e74983e8066a5c4e4",
                 "shasum": ""
             },
             "require": {
@@ -150,7 +150,7 @@
                 "issues": "https://github.com/benlumia007/backdrop-template-helpers/issues",
                 "source": "https://github.com/benlumia007/backdrop-template-helpers/tree/1.0.0"
             },
-            "time": "2023-01-23T16:40:07+00:00"
+            "time": "2023-05-25T21:39:37+00:00"
         }
     ],
     "packages-dev": [],
