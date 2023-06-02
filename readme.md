@@ -1,4 +1,4 @@
-# Backdrop Template View
+# Backdrop Template Hierarchy
 A smarter and flexible template hierarchy
 
 ## Requirements
