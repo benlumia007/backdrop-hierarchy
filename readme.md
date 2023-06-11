@@ -2,10 +2,10 @@
 A smarter and flexible template hierarchy
 
 ## Requirements
-* [ClassicPress](https://www.classicpress.net) 1.4.0 or higher
-* [WordPress](https://wordpress.org) 4.9 or higher
-* [PHP](https://php.net) 7.0 or higher
-* [Composer](https://getcomposer.org) 2.2+
+* [ClassicPress](https://www.classicpress.net)
+* [WordPress](https://wordpress.org)
+* [PHP](https://www.php.net/releases/7_1_33.php)
+* [Composer](https://getcomposer.org)
 
 ## Copyright and Licenses
 This project is licensed under the GNU GPL, version 2 or later.

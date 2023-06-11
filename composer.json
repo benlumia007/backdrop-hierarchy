@@ -1,10 +1,8 @@
 {
-    "name": "benlumia007/backdrop-template-hierarchy",
-    "description": "A core that helps you build amazing themes",
-    "keywords": [
-        "wordpress"
-    ],
-    "homepage": "https://github.com/benlumia007/backdrop-template-hierarchy",
+    "name": "backdrop-dev/template-hierarchy",
+    "description": "A smarter and flexible template hierarchy.",
+    "keywords": [ "classicpress", "wordpress" ],
+    "homepage": "https://github.com/backdrop-dev/template-hierarchy",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
@@ -24,7 +22,7 @@
     },
     "require": {
         "php": ">=7.1",
-        "benlumia007/backdrop": "^1.0",
-        "benlumia007/backdrop-template-helpers": "^1.0"
+        "backdrop-dev/framework": "^1.0",
+        "backdrop-dev/template-helpers": "^1.0"
     }
 }
