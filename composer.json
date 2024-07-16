@@ -22,7 +22,6 @@
     },
     "require": {
         "php": ">=7.1",
-        "backdrop-dev/framework": "^1.0",
         "backdrop-dev/template-helpers": "^1.0"
     }
 }

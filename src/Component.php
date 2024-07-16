@@ -82,7 +82,7 @@ class Component implements Hierarchy {
      * @access public
      * @return void
      */
-    public function boot() {
+    public function boot(): void {
 
         // Filter the front page template.
         add_filter( 'frontpage_template_hierarchy',  [ $this, 'frontPage' ], 5 );
@@ -161,7 +161,7 @@ class Component implements Hierarchy {
 	 * @param  array   $templates
 	 * @return array
 	 */
-	public function single( $templates ) {
+	public function single( $templates ): array {
 
 		$templates = [];
 
